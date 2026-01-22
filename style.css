@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #040C18;
+}
+
+.button-main {
+    background-color: #FF4820;
+}
+
+.container-wide {
+    width: 1170px;
+    max-width: 1170px;
+    margin-inline: auto;
+}
+
+.container-narrow {
+    width: 670px;
+    max-width: 670px;
+}
+
+.nav-container {
+    padding-top: 55px;
+}
+
+.nav {
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-right: 68px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 54px;
+    list-style-type: none;
+    margin-right: auto;
+}
+
+.nav-buttons {
+    display: flex;
+    width: 235px;
+    max-width: 235px;
+}
+
+.nav-sign-up {
+    padding: 16px 44px;
+}
+
+/*----------------HERO---------------*/
+
+.hero-container {
+    margin-top: 103px;
+}
+
+.hero-left {
+    max-width: 614px;
+}
+
+.hero-title {
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -4%;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    margin-top: 33px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0%;
+    color: #81AFDD;
+}
+
+.hero-input {
+    margin-top: 40px;
+    height: 73px;
+    max-height: 73px;
+    width: 630px;
+    max-width: 630px;
+    background: #052D56;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hero-input {
+    padding-left: 32px;
+}
+
+.hero-input-element {
+    background: none;
+    border: none;
+    outline: none;
+    width: 174px;
+}
+
+.hero-input-element::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero-get-started {
+    width: 174px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-signup {
+    display: flex;
+    margin-top: 37px;
+    align-items: center;
+    gap: 13px;
+}
+
+.hero-signup-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 37px;
+}
