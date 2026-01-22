@@ -3,24 +3,32 @@
     padding: 0;
     font-family: 'Manrope', sans-serif;
     color: #FFFFFF;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #040C18;
+    overflow-x: hidden;
 }
 
 .button-main {
     background-color: #FF4820;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button-main:hover {
+    background-color: #AE67FA;
 }
 
 .container-wide {
-    width: 1170px;
+    width: 90%;
     max-width: 1170px;
     margin-inline: auto;
 }
 
 .container-narrow {
-    width: 670px;
+    width: 90%;
     max-width: 670px;
     margin-inline: auto;
 }
@@ -34,6 +42,25 @@ body {
     font-size: 18px;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link,
+.nav-sign-in p {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-burger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    filter: brightness(100%);
+}
+
+.nav-link:hover,
+.nav-sign-in:hover p {
+    color: #AE67FA;
 }
 
 .nav-logo {
@@ -60,6 +87,7 @@ body {
 
 .nav-sign-up {
     padding: 16px 44px;
+    white-space: nowrap;
 }
 
 /*----------------HERO---------------*/
@@ -95,13 +123,14 @@ body {
     margin-top: 40px;
     height: 73px;
     max-height: 73px;
-    width: 630px;
+    width: 100%;
     max-width: 630px;
     background: #052D56;
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
     overflow: hidden;
+    padding-left: 32px;
 }
 
 .hero-input {
@@ -112,7 +141,8 @@ body {
     background: none;
     border: none;
     outline: none;
-    width: 174px;
+    width: 100%;
+    color: white;
 }
 
 .hero-input-element::placeholder {
@@ -122,6 +152,7 @@ body {
 
 .hero-get-started {
     width: 174px;
+    min-width: 174px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,6 +162,8 @@ body {
     display: flex;
     margin-top: 37px;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .hero-signup-pfp-list {
@@ -141,6 +174,10 @@ body {
 
 .hero-signup-pfp-list li {
     margin-left: -10px;
+}
+
+.hero-signup-pfp-list li:first-child {
+    margin-left: 0;
 }
 
 .hero-signup-text {
@@ -171,4 +208,74 @@ body {
 .testiomonials-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*----------------responsive---------------*/
+
+@media(max-width: 1140px) {
+    .nav-links,
+    .nav-buttons {
+        display: none;
+    }
+
+    .nav-logo {
+        margin-right: 0;
+    }
+
+    .nav-burger {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+    }
+
+    .hero-left {
+        margin: 0 auto;
+    }
+
+    .hero-container::after {
+        display: none;
+    }
+
+    .hero-input {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .hero-signup {
+        justify-content: center;
+    }
+
+    .testiomonial {
+        margin: 10px;
+    }
+}
+
+@media(max-width: 550px) {
+    .hero-title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .hero-input {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .hero-get-started {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+    }
 }
